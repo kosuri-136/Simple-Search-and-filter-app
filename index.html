@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Filter List Application</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <h1>Filter List Application</h1>
+
+  <div class="filters">
+    <label for="search-input">Search:</label>
+    <input type="text" id="search-input">
+
+    <label for="country-filter">Country:</label>
+    <input type="text" id="country-filter">
+
+    <label for="gender-filter">Gender:</label>
+    <select id="gender-filter">
+      <option value="">All</option>
+      <option value="male">Male</option>
+      <option value="female">Female</option>
+    </select>
+
+    <button id="filter-button">Filter</button>
+  </div>
+
+  <ul id="filtered-list">
+    <!-- Filtered list items will be added dynamically here -->
+  </ul>
+
+  <script src="script.js"></script>
+</body>
+</html>
